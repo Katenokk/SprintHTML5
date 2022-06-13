@@ -6,62 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprint HTML5 Theme</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>   
     <header>
-        <div>
+        <div class="navbar">
             <div>
                 <a href="#">
                     <img src="images/sprintlogo.png" alt="sprint logo">
                 </a>
             </div>
             <nav>
-          <ul>
-              <li>Home</li>
-              <li>Pages</li>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Potfolio</li>
-              <li>Blog</li>
-              <li>Contact us</li>
-          </ul>
+                <ul>
+                    <li>Home</li>
+                    <li>Pages</li>
+                    <li>About Us</li>
+                    <li>Services</li>
+                    <li>Potfolio</li>
+                    <li>Blog</li>
+                    <li>Contact us</li>
+                </ul>
             </nav>
-        </div>   
+        </div>
     </header>
     <!-- primera sección, cabecera-->
-    <section>
-        <div>
-            <h4>DESIGN / DEVELOPMENT / BRANDING</h4> <!--pero están en un ul y después div???-->
+    <section class="container-design">
+        <div class="design-dev-br">
+            <h4>DESIGN / DEVELOPMENT / BRANDING</h4> 
             <h1>SPRINT TRUE MINIMAL THEME</h1>
         </div>
     </section>
     <!-- segunda sección, about section-->
     <section>
-        <div>    
+        <div class="title">    
             <h4>ABOUT OUR AGENCY</h4>
             <p>He's a demon on wheels. The mate was a mighty sailin' man the Skipper brave and sure. Five passengers set sail that day for a three hour tour a three hour tour the ship set ground on the shore of this uncharted</p>
         </div>
-        <div>
+        <div class="container-who">
             <article>  <!--mejor una ul?-->
+                
+                <img src="images/whoweare.jpg" alt="girl chasing pigeon">
                 <h6>WHO WE ARE</h6>
-                <img src="images/whoweare.jpg" alt="girl running after pigeon">
                 <p>Can you tell me how to get how to get to SesaStreet. Now the world don't move to the beat of just one um. What might be right for you the.</p>
             </article>
             <article>
-                <h6>OUR MISSION</h6>
+                
                 <img src="images/ourmission.jpg" alt="girl on a bridge">
+                <h6>OUR MISSION</h6>
                 <p>Can you tell me how to get how to get to SesaStreet. Now the world don't move to the beat of just one um. What might be right for you the.</p>
             </article>
             <article>
-                <h6>OUR VISION</h6>
+                
                 <img src="images/ourvision.jpg" alt="wooden flip-flop">
+                <h6>OUR VISION</h6>
                 <p>Can you tell me how to get how to get to SesaStreet. Now the world don't move to the beat of just one um. What might be right for you the.</p>
             </article>
         </div>
     </section>
     <!-- tercera sección, services-->
-    <section>
-        <div>
+    <section class="services">
+        <div class="title">
             <h4>SERVICES WHAT WE PROVIDE</h4>
             <p>He's a demon on wheels. The mate was a mighty sailin' man the Skipper brave and sure. Five passengers set sail
                 that day for a three hour tour a three hour tour the ship set ground on the shore of this uncharted</p>
@@ -118,13 +122,18 @@
         </ul>
     </section>
     <!--sección cuarta, why choose us-->
-    <section>
-        <div>
-            <h4>Why Choose us?</h4>
-            <h6>our capabilities</h6>
-            <p>Then along come two they got nothin' but their jeans. Just two good ol' boys Never meanin' no harm beats all you've ever saw been</p>
+    <section class="why-choose">
+        <div class="container-why">
+            <div>
+                <h4>Why Choose us?</h4>
+                <h6>our capabilities</h6>
+                <p>Then along come two they got nothin' but their jeans. Just two good ol' boys Never meanin' no harm beats all
+                    you've ever saw been</p>
+            </div>
+        
             <ul>
-                <li> <!---TODO MAL AQUÍ!!-->
+                <li>
+                    <!---TODO MAL AQUÍ!!-->
                     <img src="images/rocket-solid.svg" alt="rocket icon">
                     UNIQUE
                 </li>
@@ -140,148 +149,144 @@
                     <img src="images/pencil-solid.svg" alt="pencil icon">
                     MINIMAL
                 </li>
-            </ul>
+            </ul>      
         </div>
-        <div>
-            <img src="images/why-choose-img-1.jpg" alt>
+        <div class="right-bottom">
+            <img src="../images/leaf-solid.svg" alt>
             <p>
-                The ship set ground on the shore of this uncharted desert isle with Gilligan the Skipper too the million aire and his wife didn't need no welfare states 
+                The ship set ground on the shore of this uncharted desert isle with Gilligan the Skipper too the million aire
+                and his wife didn't need no welfare states
             </p>
         </div>
     </section>
+
     <!--sección 5, our latest works-->
-    <section>
-        <div>
+    <section class="latest">
+        <div class="title">
             <h4>our latest works</h4>
             <P>He's a demon on wheels. The mate was a mighty sailin' man the Skipper brave and sure. Five passengers set sail
                 that day for a three hour tour a three hour tour the ship set ground on the shore of this uncharted</P>
         </div>
         <div>
-            <ul>
+            <ul class="latest-ul">
                 <li> 
                     <article>
-                        <img src="images/folio-img-1.jpg" alt="">
-                        <div>
-                            <a href="#."></a>
-                            <h6>Awesome Projects</h6>
-                        </div>
+                        <img src="images/folio-img-1.jpg" alt="">          
                     </article>            
                 </li>
                 <li>
                     <article>
                         <img src="images/folio-img-2.jpg" alt="">
-                        <div>
-                            <a href="#."></a>
-                            <h6>Awesome Projects</h6>
-                        </div>
+                      
                     </article> 
                 </li>
                 <li>
                     <article>
                         <img src="images/folio-img-3.jpg" alt="">
-                        <div>
-                            <a href="#."></a>
-                            <h6>Awesome Projects</h6>
-                        </div>
+                      
                     </article> 
                 </li>
                 <li>
                     <article>
                         <img src="images/folio-img-4.jpg" alt="">
-                        <div>
-                            <a href="#."></a>
-                            <h6>Awesome Projects</h6>
-                        </div>
+                      
                     </article> 
                 </li>
                 <li>
                     <article>
                         <img src="images/folio-img-5.jpg" alt="">
-                        <div>
-                            <a href="#."></a>
-                            <h6>Awesome Projects</h6>
-                        </div>
+                       
                     </article> 
                 </li>
                 <li>
                     <article>
                         <img src="images/folio-img-6.jpg" alt="">
-                        <div>
-                            <a href="#."></a>
-                            <h6>Awesome Projects</h6>
-                        </div>
+                   
                     </article> 
                 </li>
                 <li>
                     <article>
                         <img src="images/folio-img-7.jpg" alt="">
-                        <div>
-                            <a href="#."></a>
-                            <h6>Awesome Projects</h6>
-                        </div>
+                       
                     </article> 
                 </li>
                 <li>
                     <article>
                         <img src="images/folio-img-8.jpg" alt="">
-                        <div>
-                            <a href="#."></a>
-                            <h6>Awesome Projects</h6>
-                        </div>
+                       
                     </article> 
                 </li>
-                <div>
-                    <h4>Do you want to explore all our works?</h4>
-                    <a href="#.">view all works</a>
-                </div>
+                
             </ul>
+            <div class="explore">
+                <h4>Do you want to explore all our works?</h4>
+                <a href="#.">view all works</a>
+            </div>
         </div>     
         
     </section>
     <!---sección 6, we do innovate-->
-    <section>
+    <section class="section-innovative">
         <div>
             <h3>
                 We do innovative things, so that we can create awesome design
             </h3>
-            <a href="#.">contact us</a>
-            <a href="#.">purchase now</a>
+            <div class="btn-div">
+                <a class= "contact-btn" href="#.">contact us</a>
+                <a class="purchase-btn" href="#.">purchase now</a>
+            </div>
+
         </div>     
     </section>
     <!---sección 7, latest-->
-    <section>
-        <div>
+    <section class="section-latest">
+        <div class="title">
             <h4>Latest from our blog</h4>
             <p>He's a demon on wheels. The mate was a mighty sailin' man the Skipper brave and sure. Five passengers set sail
                 that day for a three hour tour a three hour tour the ship set ground on the shore of this uncharted</p>
         </div>
-        <div>
-            <div>
-                <img src="images/blog-1.jpg" alt="kids on the beach with seagulls">
-                <div>
-                    "29"
-                    <span>AUG</span>
-                    <img src="images/icon-date-post.png" alt="date icon">
+        <div class="container-blog">
+            <div class="container-photo">
+                <div class="date-pic">
+                    <div class="date">
+                        <p>"29"</p>
+                        <span>AUG</span>
+                        <img src="images/icon-date-post.png" alt="date icon">
+                    </div>
+                    <img src="images/blog-1.jpg" alt="kids on the beach with seagulls">
                 </div>
-                <span>BY ADMIN / AGENCY</span>
-                <a href="#.">The one day he was shooting' at some food and up through the ground</a>
-                <p>And we'll do it our way yes our way. Make all our dreams come true for me and you. Boy the way Glen Miller played. Songs that made the hit parade.</p>
+                
+
+                <div class="pie-foto">
+                    <span>BY ADMIN / AGENCY</span>
+                    <a href="#.">The one day he was shooting' at some food and up through the ground</a>
+                    <p>And we'll do it our way yes our way. Make all our dreams come true for me and you. Boy the way Glen Miller played. Songs that made the hit parade.</p>
+                </div>
+                
             </div>
-            <div>
-                <img src="images/blog-2.jpg" alt="railroad">
-                <div>
-                    "29"
-                    <span>AUG</span>
-                    <img src="images/icon-date-post.png" alt="date icon">
+            <div class="container-photo">
+                <div class="date-pic">
+                    <div class="date">
+                        <p>"29"</p>
+                        <span>AUG</span>
+                        <img src="images/icon-date-post.png" alt="date icon">
+                    </div>
+                    <img src="images/blog-2.jpg" alt="railroad">
                 </div>
-                <span>BY ADMIN / AGENCY</span>
-                <a href="#.">The one day he was shooting' at some food and up through the ground</a>
-                <p>And we'll do it our way yes our way. Make all our dreams come true for me and you. Boy the way Glen Miller played. Songs that made the hit parade.</p>
+               
+
+                <div class="pie-foto">
+                    <span>BY ADMIN / AGENCY</span>
+                    <a href="#.">The one day he was shooting' at some food and up through the ground</a>
+                    <p>And we'll do it our way yes our way. Make all our dreams come true for me and you. Boy the way Glen Miller
+                        played. Songs that made the hit parade.</p>
+                </div>
+                
             </div> 
         </div>
     </section>
     <!--sección 8, citas-->
-    <section>
+    <section class="avatar">
         <div>
             <div><img src="images/avatar-1.png" alt="Grerry Cristal"></div>   
             <h6>GRERRY CRISTAL</h6>
@@ -291,7 +296,7 @@
                 climb. Straightnin' the curves.Well the first thing you know
                 Jeds a millionaire. Kinfolk said Jed move away from there.</p>
         </div>
-        <div>
+        <!--<div>
             <div><img src="images/avatar-1.png" alt="Grerry Cristal"></div>   
             <h6>M_ADNAN</h6>
             <span>Sydney, Australia</span>
@@ -308,16 +313,16 @@
                 the best long long time. They'll have to of things uphill
                 climb. Straightnin' the curves.Well the first thing you know
                 Jeds a millionaire. Kinfolk said Jed move away from there.</p>
-        </div>
+        </div>-->
     </section>
     <!---sección 9, logos de clientes-->
     <section>
-        <div>
+        <div class="title">
             <h4>our trusted clients</h4>
             <p>He's a demon on wheels. The mate was a mighty sailin' man the Skipper brave and sure. Five passengers set sail
                 that day for a three hour tour a three hour tour the ship set ground on the shore of this uncharted</p>
         </div>
-        <ul>
+        <ul class="container-logo">
             <li>
                 <img src="images/c-logo-1.png" alt>
             </li>
@@ -340,15 +345,15 @@
     </section>
     <!---útlima sección, contact us-->
     <section>
-        <div>
+        <div class="title">
             <h4>contact us</h4>
             <p>He's a demon on wheels. The mate was a mighty sailin' man the Skipper brave and sure. Five passengers set sail that day for a three hour tour a three hour tour the ship set ground on the shore of this uncharted</p>
         </div>
         <div>
-            <form id="contact_form" class="" method="post" action="">
-                <ul>
+            <form id="contact_form" class="" method="post" action="">  <!--no hay action??-->
+                <ul class="inputs">
                     <li>
-                        <label>  <!---el label no tiene argumentos? for?? va por fuera del input?-->
+                        <label> 
                             <input type="text" name="name" id="name" placeholder="*NAME">
                         </label>
                     </li>
@@ -368,7 +373,7 @@
                         </label>
                     </li>
                 </ul>
-                <ul>
+                <ul class="textarea">
                     <li>
                         <label>
                             <textarea name="message" id="message" rows="5" placeholder="*MESSAGE"></textarea>
@@ -378,28 +383,34 @@
                         <button type="submit" value="submit" id="btn_submit">send message</button>
                     </li>
                 </ul>
-            </form>  <!--por qué no es action???, son dos ul-->
+            </form>  
         </div>
     </section>
     <footer>
-        <div>
+        <div class="address">
             <p>
                 " 09 Design Street, Downtown "
                 <br>
                 "Victoria, Australia "
             </p>
         </div>
-        <div>
+        <div class="copyright">
             <div>
                 <ul>
                    <li>
-                    <a href="#"></a>
+                    <a href="#">
+                        <i class='fa fa-facebook'></i>
+                    </a>
                    </li>
                    <li>
-                    <a href="#"></a>
+                    <a href="#">
+                        <i class='fa fa-twitter'></i>
+                    </a>
                    </li>
                    <li>
-                    <a href="#"></a>
+                    <a href="#">
+                        <i class='fa fa-linkedin'></i>
+                    </a>
                    </li> 
                 </ul>
                 <p>

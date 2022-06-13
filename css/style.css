@@ -1,0 +1,516 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+p {
+    color: #989898;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+nav li {
+    list-style: none;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+}
+
+header {
+    padding: 1rem;
+}
+
+.title {
+    text-align: center;
+    padding: 5% 20%;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.title h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.container-design {
+    background-image: url("../images/cabecera_background.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+    height: 25em;
+    background-position: 0 0;
+    
+}
+
+.design-dev-br {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;   /*importante poner la altura al div!*/
+}
+
+.design-dev-br h1 {
+    font-size: 2.2em;
+}
+
+.container-who {
+    display: flex;
+
+}
+
+.container-who article {
+    padding: 0 0.5em;
+    margin: 1em 1em; 
+}
+
+.container-who p {
+    width: 100%;
+}
+
+
+.services li {
+    width: 20%;
+    padding: 0 1em;
+    list-style: none;
+    margin: 1em 2em;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+}
+
+hr {
+    width: 20px;
+    margin-left: 0;
+}
+
+.services ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.container-why {
+    width: 35%;
+    border: solid 2px rgb(204, 187, 187);
+    position: relative;
+    left: 120px;
+    top: 130px;
+    background-color: rgb(250, 250, 250);
+    
+    
+
+
+}
+
+.container-why div {
+    padding: 10px 20px;
+    font-size: 13px;
+    line-height: 28px;
+    
+}
+
+.container-why h4 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.container-why h6 {
+
+    text-transform: uppercase;
+} 
+
+.why-choose {
+    background-image: url("../images/why-choose-img-1.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+    margin-right: 80px;
+    
+
+}
+
+.why-choose img {
+    width: 18px;   
+}
+
+.why-choose ul {
+    display: flex;
+    flex-flow: row wrap;  /*no puedo quitar el padding de abajo!!!!!!!!!!!!!!*/
+    
+}
+
+.why-choose li {
+    list-style: none;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 35px 60px;
+    border: solid 1px rgb(199, 185, 185);
+    
+}
+
+
+.right-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.6);
+    height: 150px;
+    width: 500px;
+    padding: 20px 20px;
+}
+
+.right-bottom p {
+    color: white;
+}
+
+.right-bottom img {
+    color: white;
+}
+
+
+
+.latest-ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 10px;
+}
+
+.latest-ul li {
+    list-style: none;
+    min-width: 300px;;
+    flex: 1 1 20%;  /*no va el flex grow*/
+    margin: 5px;
+    
+}
+
+*.latest-ul img {
+    max-width: 310px; /*sin el max se solapan pero con el max no crecen*/
+}*
+
+/*.latest-ul li ::after {
+    content: "Awesome Prpjects";
+    width: 250px;
+    height: 250px;
+    background: grey;
+    position: relative;
+
+}
+
+.latest-ul li :hover::after {
+    width: 250px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+
+}*/
+
+.explore h4 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.explore {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.explore a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #333;
+    padding: 1em 3em;
+
+}
+
+.section-innovative {
+    background-color: #333;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.section-innovative h3 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    padding: 10px 200px;
+    line-height: 60px;
+    
+
+}
+
+.btn-div {
+    width: 35%;
+    padding: 10px 500px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.contact-btn {
+    color: #333;
+    text-decoration: none;
+    background-color: white;
+    padding: 1em 2.5em;
+
+}
+
+.purchase-btn {
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    padding: 1em 2.5em;
+    border: solid 1px;
+}
+
+.section-latest {
+    margin-bottom: 100px;
+}
+
+.container-blog {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container-blog > div {
+    width: 500px;
+}
+
+.date {
+    background-color: #333;
+    width: 50px;
+    height: 80px;
+    color: white;
+    padding: 10px 20px;
+    margin: auto 10px 0 10px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.date img {
+    width: 25px;
+}
+
+.pie-foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  /*no hace nada!!!!*/
+    width: 449px;
+    margin-left: 85px;
+}
+
+.pie-foto a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.pie-foto span {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.date-pic {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container-photo {
+    margin-right: 50px;
+}
+
+.container-blog {
+    padding: 10px 100px;
+}
+
+.avatar > div {
+    background-image: url("../images/testi-bg.jpg");
+    height: 400px;
+    color: white;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 150px;
+    position: relative;
+
+
+}
+
+.avatar img {
+    position: relative;
+    bottom: 60px;
+}
+
+.avatar h6 {
+    font-size: 20px;
+}
+
+
+
+.container-logo {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+    /*justify-content: center; */ /*no centra el contenido!!!*/
+}
+
+.container-logo li {
+    width: 30%;
+    list-style: none;
+    padding: 20px;
+}
+
+.container-logo img {
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*formulario contacto*/
+
+/*#contact_form {
+    max-width: 1500px;    hace falta un ancho maximo!!!
+}*/
+
+.inputs {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 1em 20em;
+    border: 1px solid red; /*para comprobar los máregnes*/
+    
+}
+
+.inputs li {
+    flex: 1;
+    
+    
+}
+
+#contact_form li {
+    list-style: none;   
+}
+
+input[type=text], input[type=email] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px 15px 5px 0;
+    
+    /*min-width: 200px;*/
+}
+
+
+
+
+
+.textarea {
+    margin: 1em 20em;   
+    
+}
+
+#message {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#btn_submit {
+    padding: 15px 40px;
+    background-color: #222;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.address {
+    background-color: #3c3c3c;
+    padding: 50px; 
+    text-transform: uppercase;
+    text-align: center;
+    min-height: 100px;
+    color: #fff;
+    letter-spacing: 2.5px;
+    flex: 1;
+
+}
+
+.copyright {
+    padding: 50px;
+    min-height: 100px;
+    background-color: #343434;
+    color: #fff;
+    letter-spacing: 2.5px;
+    text-align: center;
+    flex: 1;
+
+}
+
+.copyright li {
+    list-style: none;
+    margin-left: 10px;
+    
+}
+
+.copyright a {
+    font-size:20px;
+    border-radius: 32px;
+    padding: 22px;
+    border: solid 1px #fff;
+    
+    
+    background: #343434 ;
+	color:#fff;
+}
+
+.copyright ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+footer {
+    display: flex;
+    min-width: 500px;
+    flex-flow: wrap;
+    
+}
+
